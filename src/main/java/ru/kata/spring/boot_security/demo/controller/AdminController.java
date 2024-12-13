@@ -66,7 +66,7 @@ public class AdminController {
         Set<Role> roleSet = roleService.getSetOfRoles(values);
         userService.createUser(user, roleSet);
         log.info("Save user");
-        return "redirect:/admin/users";
+        return "redirect:/admin";
     }
 
     @PostMapping("/edit")

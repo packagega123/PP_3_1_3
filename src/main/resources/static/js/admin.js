@@ -79,9 +79,11 @@ document.addEventListener('DOMContentLoaded', function () {
         let selectedOptions = Array.from(selectElement.selectedOptions);
         let roles = selectedOptions.map(option => {
             if (option.value === "User") {
-                return "ROLE_USER";
+                return "1";
+                // return "ROLE_USER";
             } else if (option.value === "Admin") {
-                return "ROLE_ADMIN";
+                return "2";
+                // return "ROLE_ADMIN";
             }
         });
 
