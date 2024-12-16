@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let params = new URLSearchParams({
             id: id,
-            email: email,
+            username: email,
             password: password,
         });
 
